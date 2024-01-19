@@ -6,7 +6,7 @@
             src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
             >
             <v-container class="d-flex flex-col  align-center h-100 justify-center">
-                <v-card-title class="text-white text-h2">
+                <v-card-title class="text-white text-md-h2 text-h4 text-wrap text-center">
                     Titulo do meu site
                 </v-card-title>
                 <v-card-title class="text-white text-subtitle-1 mt-3 mb-20">

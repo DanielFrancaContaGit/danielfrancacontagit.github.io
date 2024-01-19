@@ -540,7 +540,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-ODhryQWq.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-mHe7v1FU.mjs').then((m) => m.default || m)
   },
   {
     name: "projetos",
@@ -25443,6 +25443,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
           }),
           _: 1
         }, _parent2, _scopeId));
+        _push2(`<div class="d-none d-md-block"${_scopeId}>`);
         _push2(ssrRenderComponent(_component_NuxtLink, { to: "/" }, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
@@ -25511,7 +25512,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
           }),
           _: 1
         }, _parent2, _scopeId));
-        _push2(`<div class="ml-20"${_scopeId}></div>`);
+        _push2(`</div><div class="ml-20"${_scopeId}></div>`);
       } else {
         return [
           createVNode(_component_v_app_bar_nav_icon),
@@ -25521,34 +25522,36 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
             ]),
             _: 1
           }),
-          createVNode(_component_NuxtLink, { to: "/" }, {
-            default: withCtx(() => [
-              createVNode(_component_v_btn, null, {
-                default: withCtx(() => [
-                  createTextVNode(" Sobre mim ")
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          }),
-          createVNode(_component_NuxtLink, { to: "/projetos" }, {
-            default: withCtx(() => [
-              createVNode(_component_v_btn, null, {
-                default: withCtx(() => [
-                  createTextVNode(" Projetos ")
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          }),
-          createVNode(_component_v_btn, { class: "mr-5" }, {
-            default: withCtx(() => [
-              createTextVNode(" contato ")
-            ]),
-            _: 1
-          }),
+          createVNode("div", { class: "d-none d-md-block" }, [
+            createVNode(_component_NuxtLink, { to: "/" }, {
+              default: withCtx(() => [
+                createVNode(_component_v_btn, null, {
+                  default: withCtx(() => [
+                    createTextVNode(" Sobre mim ")
+                  ]),
+                  _: 1
+                })
+              ]),
+              _: 1
+            }),
+            createVNode(_component_NuxtLink, { to: "/projetos" }, {
+              default: withCtx(() => [
+                createVNode(_component_v_btn, null, {
+                  default: withCtx(() => [
+                    createTextVNode(" Projetos ")
+                  ]),
+                  _: 1
+                })
+              ]),
+              _: 1
+            }),
+            createVNode(_component_v_btn, { class: "mr-5" }, {
+              default: withCtx(() => [
+                createTextVNode(" contato ")
+              ]),
+              _: 1
+            })
+          ]),
           createVNode("div", { class: "ml-20" })
         ];
       }

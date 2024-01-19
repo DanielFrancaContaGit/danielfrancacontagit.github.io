@@ -4,16 +4,22 @@
         variant="outlined"
         class="h-auto rounded"
         >
-        <div class="d-flex flex-line h-100">
-            <v-avatar
+        <div class="d-flex flex-col flex-sm-row h-100 justify-center">
+            <!-- <v-avatar
                 color="grey"
                 size="250"
                 class="ma-3 rounded"
-
+                >     
+                <v-img src="https://avatars.githubusercontent.com/u/57536006?v=4" />
+            </v-avatar> -->
+            <v-avatar
+                color="grey"
+                size="250"
+                class="ma-3 d-none d-md-block rounded"
                 >     
                 <v-img src="https://avatars.githubusercontent.com/u/57536006?v=4" />
             </v-avatar>
-            <div class="d-flex flex-col pr-20 pl-10">
+            <div class="d-flex flex-col pr-md-20 pl-md-10">
                 <v-card-title class="text-h6 mt-5 font-weight-light">
                     O que eu sou?
                 </v-card-title>

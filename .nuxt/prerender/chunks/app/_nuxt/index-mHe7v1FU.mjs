@@ -1,18 +1,31 @@
-import { resolveComponent, withCtx, createTextVNode, createVNode, useSSRContext, mergeProps } from "vue";
-import { ssrRenderComponent } from "vue/server-renderer";
-import { _ as _export_sfc, a as __nuxt_component_0$1 } from "../server.mjs";
-import "#internal/nitro";
-import "ofetch";
-import "hookable";
-import "unctx";
-import "unhead";
-import "@unhead/shared";
-import "vue-router";
-import "h3";
-import "ufo";
-import "defu";
-import "klona";
-import "devalue";
+import { useSSRContext, resolveComponent, withCtx, createVNode, createTextVNode, mergeProps } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/vue/index.mjs';
+import { ssrRenderComponent } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/vue/server-renderer/index.mjs';
+import { _ as _export_sfc, a as __nuxt_component_0$1 } from '../server.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/ofetch/dist/node.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/hookable/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unctx/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unhead/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/@unhead/shared/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/vue-router/dist/vue-router.node.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/h3/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/ufo/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/defu/dist/defu.mjs';
+import '../../nitro/nitro-prerenderer.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/destr/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/scule/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/klona/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/ohash/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unstorage/dist/index.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unstorage/drivers/memory.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unstorage/drivers/lru-cache.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/unstorage/drivers/fs-lite.mjs';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/radix3/dist/index.mjs';
+import 'node:fs';
+import 'node:url';
+import 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/pathe/dist/index.mjs';
+
 const _sfc_main$2 = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   const _component_v_card = resolveComponent("v-card");
@@ -32,7 +45,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
               _push3(ssrRenderComponent(_component_v_container, { class: "d-flex flex-col align-center h-100 justify-center" }, {
                 default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                   if (_push4) {
-                    _push4(ssrRenderComponent(_component_v_card_title, { class: "text-white text-h2" }, {
+                    _push4(ssrRenderComponent(_component_v_card_title, { class: "text-white text-md-h2 text-h4 text-wrap text-center" }, {
                       default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                         if (_push5) {
                           _push5(` Titulo do meu site `);
@@ -58,7 +71,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
                     }, _parent4, _scopeId3));
                   } else {
                     return [
-                      createVNode(_component_v_card_title, { class: "text-white text-h2" }, {
+                      createVNode(_component_v_card_title, { class: "text-white text-md-h2 text-h4 text-wrap text-center" }, {
                         default: withCtx(() => [
                           createTextVNode(" Titulo do meu site ")
                         ]),
@@ -79,7 +92,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
               return [
                 createVNode(_component_v_container, { class: "d-flex flex-col align-center h-100 justify-center" }, {
                   default: withCtx(() => [
-                    createVNode(_component_v_card_title, { class: "text-white text-h2" }, {
+                    createVNode(_component_v_card_title, { class: "text-white text-md-h2 text-h4 text-wrap text-center" }, {
                       default: withCtx(() => [
                         createTextVNode(" Titulo do meu site ")
                       ]),
@@ -109,7 +122,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
             default: withCtx(() => [
               createVNode(_component_v_container, { class: "d-flex flex-col align-center h-100 justify-center" }, {
                 default: withCtx(() => [
-                  createVNode(_component_v_card_title, { class: "text-white text-h2" }, {
+                  createVNode(_component_v_card_title, { class: "text-white text-md-h2 text-h4 text-wrap text-center" }, {
                     default: withCtx(() => [
                       createTextVNode(" Titulo do meu site ")
                     ]),
@@ -163,11 +176,11 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
         }, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<div class="d-flex flex-line h-100"${_scopeId2}>`);
+              _push3(`<div class="d-flex flex-col flex-sm-row h-100 justify-center"${_scopeId2}>`);
               _push3(ssrRenderComponent(_component_v_avatar, {
                 color: "grey",
                 size: "250",
-                class: "ma-3 rounded"
+                class: "ma-3 d-none d-md-block rounded"
               }, {
                 default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                   if (_push4) {
@@ -180,7 +193,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
                 }),
                 _: 1
               }, _parent3, _scopeId2));
-              _push3(`<div class="d-flex flex-col pr-20 pl-10"${_scopeId2}>`);
+              _push3(`<div class="d-flex flex-col pr-md-20 pl-md-10"${_scopeId2}>`);
               _push3(ssrRenderComponent(_component_v_card_title, { class: "text-h6 mt-5 font-weight-light" }, {
                 default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                   if (_push4) {
@@ -320,18 +333,18 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
               _push3(`</div></div>`);
             } else {
               return [
-                createVNode("div", { class: "d-flex flex-line h-100" }, [
+                createVNode("div", { class: "d-flex flex-col flex-sm-row h-100 justify-center" }, [
                   createVNode(_component_v_avatar, {
                     color: "grey",
                     size: "250",
-                    class: "ma-3 rounded"
+                    class: "ma-3 d-none d-md-block rounded"
                   }, {
                     default: withCtx(() => [
                       createVNode(_component_v_img, { src: "https://avatars.githubusercontent.com/u/57536006?v=4" })
                     ]),
                     _: 1
                   }),
-                  createVNode("div", { class: "d-flex flex-col pr-20 pl-10" }, [
+                  createVNode("div", { class: "d-flex flex-col pr-md-20 pl-md-10" }, [
                     createVNode(_component_v_card_title, { class: "text-h6 mt-5 font-weight-light" }, {
                       default: withCtx(() => [
                         createTextVNode(" O que eu sou? ")
@@ -397,18 +410,18 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
             class: "h-auto rounded"
           }, {
             default: withCtx(() => [
-              createVNode("div", { class: "d-flex flex-line h-100" }, [
+              createVNode("div", { class: "d-flex flex-col flex-sm-row h-100 justify-center" }, [
                 createVNode(_component_v_avatar, {
                   color: "grey",
                   size: "250",
-                  class: "ma-3 rounded"
+                  class: "ma-3 d-none d-md-block rounded"
                 }, {
                   default: withCtx(() => [
                     createVNode(_component_v_img, { src: "https://avatars.githubusercontent.com/u/57536006?v=4" })
                   ]),
                   _: 1
                 }),
-                createVNode("div", { class: "d-flex flex-col pr-20 pl-10" }, [
+                createVNode("div", { class: "d-flex flex-col pr-md-20 pl-md-10" }, [
                   createVNode(_component_v_card_title, { class: "text-h6 mt-5 font-weight-light" }, {
                     default: withCtx(() => [
                       createTextVNode(" O que eu sou? ")
@@ -505,7 +518,6 @@ _sfc_main.setup = (props, ctx) => {
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
-export {
-  index as default
-};
-//# sourceMappingURL=index-ODhryQWq.js.map
+
+export { index as default };
+//# sourceMappingURL=index-mHe7v1FU.mjs.map

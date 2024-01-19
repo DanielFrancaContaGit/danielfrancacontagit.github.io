@@ -4,19 +4,22 @@
     <v-app-bar-title>
       titulo
     </v-app-bar-title>
-    <NuxtLink to="/">
-      <v-btn>
-        Sobre mim
+    <div class="d-none d-md-block">
+      <NuxtLink to="/">
+        <v-btn>
+          Sobre mim
+        </v-btn>
+      </NuxtLink>
+      <NuxtLink to="/projetos">
+        <v-btn >
+          Projetos
+        </v-btn>
+      </NuxtLink>
+      <v-btn class="mr-5">
+        contato
       </v-btn>
-    </NuxtLink>
-    <NuxtLink to="/projetos">
-      <v-btn >
-        Projetos
-      </v-btn>
-    </NuxtLink>
-    <v-btn class="mr-5">
-      contato
-    </v-btn>
+
+    </div>
     <div class="ml-20"/>
   </v-app-bar>
 </template>
