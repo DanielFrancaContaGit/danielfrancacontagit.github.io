@@ -1,10 +1,10 @@
 export default {
-  "_vue.f36acd1f.iFb0ste4.js": {
+  "_vue.f36acd1f.45JfvGej.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vue.f36acd1f.iFb0ste4.js",
+    "file": "vue.f36acd1f.45JfvGej.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -39,10 +39,10 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.oNoOzB2s.js",
+    "file": "error-404.bz_jOgNS.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_vue.f36acd1f.iFb0ste4.js"
+      "_vue.f36acd1f.45JfvGej.js"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"
@@ -59,9 +59,9 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.NxJy_t2O.js",
+    "file": "error-500.98kyPNcv.js",
     "imports": [
-      "_vue.f36acd1f.iFb0ste4.js",
+      "_vue.f36acd1f.45JfvGej.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -91,7 +91,7 @@ export default {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.uVb-Xcup.js",
+    "file": "entry.b3IsHHsC.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
@@ -127,7 +127,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index._1Iv03HR.js",
+    "file": "index.7onEg6-I.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -139,7 +139,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "projetos.Ytc78UNm.js",
+    "file": "projetos.Z87DbNFw.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
