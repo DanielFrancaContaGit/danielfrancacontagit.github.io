@@ -1,5 +1,5 @@
 var _a;
-import { effectScope, reactive, hasInjectionContext, getCurrentInstance as getCurrentInstance$1, version as version$1, unref, inject as inject$1, toRef, h, nextTick, shallowRef, shallowReactive, isReadonly, isRef, isShallow, isReactive, toRaw, watch, onScopeDispose, Fragment, computed, watchEffect, toRefs, capitalize, isVNode, Comment, warn, ref, provide, defineComponent as defineComponent$1, camelize, createVNode, mergeProps, readonly, TransitionGroup, Transition, withDirectives, resolveDirective, vShow, Text, resolveDynamicComponent, Teleport, cloneVNode, createTextVNode, onUnmounted, withModifiers, toDisplayString, vModelText, Suspense, resolveComponent, withCtx, useSSRContext, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createApp } from "vue";
+import { effectScope, reactive, hasInjectionContext, getCurrentInstance as getCurrentInstance$1, version as version$1, unref, inject as inject$1, toRef, h, nextTick, shallowRef, shallowReactive, isReadonly, isRef, isShallow, isReactive, toRaw, watch, onScopeDispose, Fragment, computed, watchEffect, toRefs, capitalize, isVNode, Comment, warn, ref, provide, defineComponent as defineComponent$1, camelize, createVNode, mergeProps, readonly, TransitionGroup, Transition, withDirectives, resolveDirective, vShow, Text, resolveDynamicComponent, Teleport, cloneVNode, createTextVNode, onUnmounted, withModifiers, toDisplayString, vModelText, Suspense, resolveComponent, withCtx, openBlock, createBlock, renderList, useSSRContext, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createApp } from "vue";
 import { useRuntimeConfig as useRuntimeConfig$1 } from "#internal/nitro";
 import { $fetch } from "ofetch";
 import { createHooks } from "hookable";
@@ -12,7 +12,7 @@ import { withQuery, hasProtocol, parseURL, isScriptProtocol, joinURL, parseQuery
 import { defu } from "defu";
 import "klona";
 import "devalue";
-import { ssrRenderComponent, ssrRenderAttrs, ssrRenderSuspense, ssrRenderVNode } from "vue/server-renderer";
+import { ssrRenderComponent, ssrRenderList, ssrInterpolate, ssrRenderAttrs, ssrRenderSuspense, ssrRenderVNode } from "vue/server-renderer";
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
 if (!globalThis.$fetch) {
@@ -527,7 +527,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-mHe7v1FU.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-ddKg7465.js").then((m) => m.default || m)
   },
   {
     name: "projetos",
@@ -535,7 +535,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/projetos-MMGMYJrz.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/projetos-PASVwtXG.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -25117,7 +25117,7 @@ const LayoutLoader = defineComponent$1({
     return () => h(LayoutComponent, props.layoutProps, context.slots);
   }
 });
-const __nuxt_component_0$1 = defineComponent$1({
+const __nuxt_component_0$2 = defineComponent$1({
   name: "NuxtLayout",
   inheritAttrs: false,
   props: {
@@ -25206,6 +25206,128 @@ const LayoutProvider = defineComponent$1({
     };
   }
 });
+const _export_sfc = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
+  }
+  return target;
+};
+const _sfc_main$5 = {
+  data: () => ({
+    items: [
+      { title: "Sobre mim" },
+      { title: "Projetos" },
+      { title: "Contato" }
+    ]
+  })
+};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_v_menu = resolveComponent("v-menu");
+  const _component_v_btn = resolveComponent("v-btn");
+  const _component_v_list = resolveComponent("v-list");
+  const _component_v_list_item = resolveComponent("v-list-item");
+  const _component_v_list_item_title = resolveComponent("v-list-item-title");
+  _push(ssrRenderComponent(_component_v_menu, mergeProps({ transition: "slide-x-transition" }, _attrs), {
+    activator: withCtx(({ props }, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_v_btn, mergeProps({ icon: "mdi-menu" }, props), null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_v_btn, mergeProps({ icon: "mdi-menu" }, props), null, 16)
+        ];
+      }
+    }),
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_v_list, null, {
+          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<!--[-->`);
+              ssrRenderList(_ctx.items, (item, i) => {
+                _push3(ssrRenderComponent(_component_v_list_item, { key: i }, {
+                  default: withCtx((_3, _push4, _parent4, _scopeId3) => {
+                    if (_push4) {
+                      _push4(ssrRenderComponent(_component_v_list_item_title, null, {
+                        default: withCtx((_4, _push5, _parent5, _scopeId4) => {
+                          if (_push5) {
+                            _push5(`${ssrInterpolate(item.title)}`);
+                          } else {
+                            return [
+                              createTextVNode(toDisplayString(item.title), 1)
+                            ];
+                          }
+                        }),
+                        _: 2
+                      }, _parent4, _scopeId3));
+                    } else {
+                      return [
+                        createVNode(_component_v_list_item_title, null, {
+                          default: withCtx(() => [
+                            createTextVNode(toDisplayString(item.title), 1)
+                          ]),
+                          _: 2
+                        }, 1024)
+                      ];
+                    }
+                  }),
+                  _: 2
+                }, _parent3, _scopeId2));
+              });
+              _push3(`<!--]-->`);
+            } else {
+              return [
+                (openBlock(true), createBlock(Fragment, null, renderList(_ctx.items, (item, i) => {
+                  return openBlock(), createBlock(_component_v_list_item, { key: i }, {
+                    default: withCtx(() => [
+                      createVNode(_component_v_list_item_title, null, {
+                        default: withCtx(() => [
+                          createTextVNode(toDisplayString(item.title), 1)
+                        ]),
+                        _: 2
+                      }, 1024)
+                    ]),
+                    _: 2
+                  }, 1024);
+                }), 128))
+              ];
+            }
+          }),
+          _: 1
+        }, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_v_list, null, {
+            default: withCtx(() => [
+              (openBlock(true), createBlock(Fragment, null, renderList(_ctx.items, (item, i) => {
+                return openBlock(), createBlock(_component_v_list_item, { key: i }, {
+                  default: withCtx(() => [
+                    createVNode(_component_v_list_item_title, null, {
+                      default: withCtx(() => [
+                        createTextVNode(toDisplayString(item.title), 1)
+                      ]),
+                      _: 2
+                    }, 1024)
+                  ]),
+                  _: 2
+                }, 1024);
+              }), 128))
+            ]),
+            _: 1
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/sidMenu.vue");
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+};
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$3]]);
 const firstNonUndefined = (...args) => args.find((arg) => arg !== void 0);
 const DEFAULT_EXTERNAL_REL_ATTRIBUTE = "noopener noreferrer";
 // @__NO_SIDE_EFFECTS__
@@ -25407,17 +25529,10 @@ function applyTrailingSlashBehavior(to, trailingSlash) {
   }
   return normalizeFn(to, true);
 }
-const _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-};
-const _sfc_main$3 = {};
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+const _sfc_main$4 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   const _component_v_app_bar = resolveComponent("v-app-bar");
-  const _component_v_app_bar_nav_icon = resolveComponent("v-app-bar-nav-icon");
+  const _component_SidMenu = __nuxt_component_0$1;
   const _component_v_app_bar_title = resolveComponent("v-app-bar-title");
   const _component_NuxtLink = __nuxt_component_0;
   const _component_v_btn = resolveComponent("v-btn");
@@ -25427,7 +25542,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   }, _attrs), {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(ssrRenderComponent(_component_v_app_bar_nav_icon, null, null, _parent2, _scopeId));
+        _push2(ssrRenderComponent(_component_SidMenu, null, null, _parent2, _scopeId));
         _push2(ssrRenderComponent(_component_v_app_bar_title, null, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
@@ -25512,7 +25627,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
         _push2(`</div><div class="ml-20"${_scopeId}></div>`);
       } else {
         return [
-          createVNode(_component_v_app_bar_nav_icon),
+          createVNode(_component_SidMenu),
           createVNode(_component_v_app_bar_title, null, {
             default: withCtx(() => [
               createTextVNode(" titulo ")
@@ -25556,13 +25671,13 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     _: 1
   }, _parent));
 }
-const _sfc_setup$3 = _sfc_main$3.setup;
-_sfc_main$3.setup = (props, ctx) => {
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/navbar.vue");
-  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$2]]);
 const RouteProvider = defineComponent$1({
   props: {
     vnode: {
@@ -25702,12 +25817,73 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
+const _sfc_main$3 = {
+  data: () => ({
+    icons: [
+      "mdi-facebook",
+      "mdi-twitter",
+      "mdi-linkedin",
+      "mdi-instagram"
+    ]
+  })
+};
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_v_footer = resolveComponent("v-footer");
+  const _component_v_btn = resolveComponent("v-btn");
+  const _component_v_divider = resolveComponent("v-divider");
+  _push(ssrRenderComponent(_component_v_footer, mergeProps({ class: "bg-indigo-lighten-1 text-center d-flex flex-column" }, _attrs), {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<div${_scopeId}><!--[-->`);
+        ssrRenderList(_ctx.icons, (icon) => {
+          _push2(ssrRenderComponent(_component_v_btn, {
+            key: icon,
+            class: "mx-4",
+            icon,
+            variant: "text"
+          }, null, _parent2, _scopeId));
+        });
+        _push2(`<!--]--></div><div class="pt-0"${_scopeId}> Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </div>`);
+        _push2(ssrRenderComponent(_component_v_divider, null, null, _parent2, _scopeId));
+        _push2(`<div${_scopeId}>${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())} — <strong${_scopeId}>Vuetify</strong></div>`);
+      } else {
+        return [
+          createVNode("div", null, [
+            (openBlock(true), createBlock(Fragment, null, renderList(_ctx.icons, (icon) => {
+              return openBlock(), createBlock(_component_v_btn, {
+                key: icon,
+                class: "mx-4",
+                icon,
+                variant: "text"
+              }, null, 8, ["icon"]);
+            }), 128))
+          ]),
+          createVNode("div", { class: "pt-0" }, " Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "),
+          createVNode(_component_v_divider),
+          createVNode("div", null, [
+            createTextVNode(toDisplayString((/* @__PURE__ */ new Date()).getFullYear()) + " — ", 1),
+            createVNode("strong", null, "Vuetify")
+          ])
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/footer.vue");
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+};
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
 const _sfc_main$2 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_NuxtLayout = __nuxt_component_0$1;
+  const _component_NuxtLayout = __nuxt_component_0$2;
   const _component_v_app = resolveComponent("v-app");
   const _component_Navbar = __nuxt_component_1;
   const _component_NuxtPage = __nuxt_component_2;
+  const _component_Footer = __nuxt_component_3;
   _push(`<div${ssrRenderAttrs(_attrs)}>`);
   _push(ssrRenderComponent(_component_NuxtLayout, null, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -25717,10 +25893,12 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
             if (_push3) {
               _push3(ssrRenderComponent(_component_Navbar, null, null, _parent3, _scopeId2));
               _push3(ssrRenderComponent(_component_NuxtPage, null, null, _parent3, _scopeId2));
+              _push3(ssrRenderComponent(_component_Footer, null, null, _parent3, _scopeId2));
             } else {
               return [
                 createVNode(_component_Navbar),
-                createVNode(_component_NuxtPage)
+                createVNode(_component_NuxtPage),
+                createVNode(_component_Footer)
               ];
             }
           }),
@@ -25731,7 +25909,8 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
           createVNode(_component_v_app, null, {
             default: withCtx(() => [
               createVNode(_component_Navbar),
-              createVNode(_component_NuxtPage)
+              createVNode(_component_NuxtPage),
+              createVNode(_component_Footer)
             ]),
             _: 1
           })

@@ -1,6 +1,7 @@
 <template>
   <v-app-bar flat :elevation="2">
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+    <SidMenu/>
     <v-app-bar-title>
       titulo
     </v-app-bar-title>

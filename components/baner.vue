@@ -1,8 +1,9 @@
 <template>
-    <v-container flat class="pa-7 mw-100">
+    <v-container flat>
         <v-card 
         variant="outlined"
         class="h-auto rounded"
+        color="blue-grey-darken-4"
         >
         <div class="d-flex flex-col flex-sm-row h-100 justify-center">
             <!-- <v-avatar

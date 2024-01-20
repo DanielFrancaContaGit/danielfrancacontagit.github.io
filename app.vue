@@ -3,8 +3,9 @@
     <NuxtLayout>
       <v-app>
         <Navbar/>
-          <NuxtPage/>
-      </v-app>
+        <NuxtPage/>
+        <Footer/>
+      </v-app> 
     </NuxtLayout>
 
   </div>

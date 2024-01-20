@@ -1,3 +1,5 @@
 <template>
-    <h1>Projetos</h1>
+    <v-main>
+        <Projetos class="my-15"/>
+    </v-main>
 </template>
