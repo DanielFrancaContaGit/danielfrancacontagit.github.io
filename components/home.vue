@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card id="home">
         <v-img
             aspect-ratio="16/9"
             cover

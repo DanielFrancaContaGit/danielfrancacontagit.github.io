@@ -1,5 +1,9 @@
 <template>
+    <v-row align="center" justify="center">
+      <h1 class="text-h2 mb-10 text-blue-grey-darken-4">-------</h1>
+    </v-row>
     <v-footer
+      id="footer"
       class="bg-indigo-lighten-1 text-center d-flex flex-column"
     >
       <div>

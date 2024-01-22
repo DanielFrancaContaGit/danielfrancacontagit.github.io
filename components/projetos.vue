@@ -6,9 +6,9 @@
   </script>
 
 <template>
-    <v-container>
+    <v-container id="projetos">
       <v-row align="center" justify="center">
-          <h1 class="text-h2 text-blue-grey-darken-4">Projetos</h1>
+          <h1 class="text-h2 mb-10 text-blue-grey-darken-4">Projetos</h1>
       </v-row>
       <v-row align="center" justify="center">
         <v-col

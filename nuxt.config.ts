@@ -19,4 +19,18 @@ export default defineNuxtConfig({
     },
   },
 
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+      appearActiveClass: 'true',
+    }
+  },
+
+  router: {
+    options: {
+      scrollBehaviorType: "smooth"
+    }
+  }
+
 })

@@ -1,5 +1,8 @@
 <template>
-    <v-container flat>
+    <v-container flat id="sobremim">
+        <v-row align="center" justify="center">
+            <h1 class="text-h2 mb-10 text-blue-grey-darken-4">-------</h1>
+        </v-row>
         <v-card 
         variant="outlined"
         class="h-auto rounded"
