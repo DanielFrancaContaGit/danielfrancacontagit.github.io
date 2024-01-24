@@ -27,7 +27,7 @@
     <v-app-bar-nav-icon @click="isDrowOpen = !isDrowOpen" ></v-app-bar-nav-icon>
     <v-app-bar-title>
       <NuxtLink to="#home">
-        titulo
+        Home
       </NuxtLink>
     </v-app-bar-title>
     <div class="d-none d-md-block">

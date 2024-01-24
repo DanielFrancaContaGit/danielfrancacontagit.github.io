@@ -527,7 +527,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-KTdUZeue.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-dz80TImK.js").then((m) => m.default || m)
   },
   {
     name: "projetos",
@@ -535,7 +535,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/projetos-4Lic66kD.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/projetos-sf09Euua.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -25733,10 +25733,10 @@ const _sfc_main$4 = {
                   _push3(ssrRenderComponent(_component_NuxtLink, { to: "#home" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
-                        _push4(` titulo `);
+                        _push4(` Home `);
                       } else {
                         return [
-                          createTextVNode(" titulo ")
+                          createTextVNode(" Home ")
                         ];
                       }
                     }),
@@ -25746,7 +25746,7 @@ const _sfc_main$4 = {
                   return [
                     createVNode(_component_NuxtLink, { to: "#home" }, {
                       default: withCtx(() => [
-                        createTextVNode(" titulo ")
+                        createTextVNode(" Home ")
                       ]),
                       _: 1
                     })
@@ -25850,7 +25850,7 @@ const _sfc_main$4 = {
                 default: withCtx(() => [
                   createVNode(_component_NuxtLink, { to: "#home" }, {
                     default: withCtx(() => [
-                      createTextVNode(" titulo ")
+                      createTextVNode(" Home ")
                     ]),
                     _: 1
                   })
@@ -26101,7 +26101,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
             variant: "text"
           }, null, _parent2, _scopeId));
         });
-        _push2(`<!--]--></div><div class="pt-0"${_scopeId}> Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </div>`);
+        _push2(`<!--]--></div><div class="pt-0"${_scopeId}> Feito por Daniel França </div>`);
         _push2(ssrRenderComponent(_component_v_divider, null, null, _parent2, _scopeId));
         _push2(`<div${_scopeId}>${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())} — <strong${_scopeId}>Vuetify</strong></div>`);
       } else {
@@ -26116,7 +26116,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
               }, null, 8, ["icon"]);
             }), 128))
           ]),
-          createVNode("div", { class: "pt-0" }, " Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "),
+          createVNode("div", { class: "pt-0" }, " Feito por Daniel França "),
           createVNode(_component_v_divider),
           createVNode("div", null, [
             createTextVNode(toDisplayString((/* @__PURE__ */ new Date()).getFullYear()) + " — ", 1),
