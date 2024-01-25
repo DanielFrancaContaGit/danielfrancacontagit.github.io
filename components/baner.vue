@@ -1,6 +1,6 @@
 <template>
     <v-container flat id="sobremim">
-        <v-row align="center" justify="center">
+        <v-row align="center" justify="center" class="ma-0">
             <h1 class="text-h2 mb-10 text-blue-grey-darken-4">-------</h1>
         </v-row>
         <v-card 

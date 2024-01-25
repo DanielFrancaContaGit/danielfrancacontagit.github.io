@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <v-navigation-drawer v-model="isDrowOpen" disable-resize-watcher="true">
+  <v-navigation-drawer v-model="isDrowOpen" disable-resize-watcher=True>
     <v-list>
       <v-list-subheader @click="isDrowOpen = !isDrowOpen">Menu</v-list-subheader>
       <NuxtLink to="#home" @click="isDrowOpen = !isDrowOpen">
