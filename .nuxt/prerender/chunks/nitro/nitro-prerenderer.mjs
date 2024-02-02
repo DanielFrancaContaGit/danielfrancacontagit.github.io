@@ -1,4 +1,4 @@
-globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/h3@1.10.0/node_modules/h3/dist/index.mjs';
+globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, getRequestHeaders, removeResponseHeader, createError, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/h3@1.10.1/node_modules/h3/dist/index.mjs';
 import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/ofetch@1.3.3/node_modules/ofetch/dist/node.mjs';
 import destr from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/destr@2.0.2/node_modules/destr/dist/index.mjs';
 import { createCall, createFetch } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/unenv@1.9.0/node_modules/unenv/runtime/fetch/index.mjs';
@@ -20,7 +20,7 @@ import { dirname, resolve } from 'file:///home/daniel/Documentos/Projetos/full-s
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "4f452a76-c733-4c51-88a6-dbfc66a1847c"
+    "buildId": "9fd489f0-cb51-46f4-af08-8df59fd81ee1"
   }
 };
 
@@ -712,11 +712,11 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _lazy_LSL676 = () => import('../renderer.mjs').then(function (n) { return n.r; });
+const _lazy_Mj3TUS = () => import('../renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
-  { route: '/**', handler: _lazy_LSL676, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_Mj3TUS, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

@@ -1,5 +1,5 @@
 import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/vue-bundle-renderer@2.0.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/h3@1.10.0/node_modules/h3/dist/index.mjs';
+import { eventHandler, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery, createError, appendResponseHeader, getResponseStatusText } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/h3@1.10.1/node_modules/h3/dist/index.mjs';
 import { stringify, uneval } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/devalue@4.3.2/node_modules/devalue/index.js';
 import { joinURL, withoutTrailingSlash } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/ufo@1.3.2/node_modules/ufo/dist/index.mjs';
 import { renderToString } from 'file:///home/daniel/Documentos/Projetos/full-stack/nuxt/mypage/node_modules/.pnpm/vue@3.4.15/node_modules/vue/server-renderer/index.mjs';

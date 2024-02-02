@@ -4,7 +4,7 @@
     "strict": true,
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "allowJs": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
@@ -16,7 +16,7 @@
         "./types/nitro-imports"
       ],
       "#paths": [
-        "../node_modules/.pnpm/nuxt@3.9.3_sass@1.70.0_vite@5.0.12/node_modules/nuxt/dist/core/runtime/nitro/paths"
+        "../node_modules/.pnpm/nuxt@3.10.0_sass@1.70.0_vite@4.5.2/node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
         "./.."
@@ -65,7 +65,7 @@
   ],
   "exclude": [
     "../node_modules",
-    "../node_modules/.pnpm/nuxt@3.9.3_sass@1.70.0_vite@5.0.12/node_modules/nuxt/node_modules",
+    "../node_modules/.pnpm/nuxt@3.10.0_sass@1.70.0_vite@4.5.2/node_modules/nuxt/node_modules",
     "../dist"
   ]
 }
